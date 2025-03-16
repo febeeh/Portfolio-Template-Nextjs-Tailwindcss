@@ -1,0 +1,21 @@
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: contain;
+  max-height: 400px !important;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide img {
+    max-height: 190px !important;
+  }
+}

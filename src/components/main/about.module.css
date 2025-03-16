@@ -1,0 +1,154 @@
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding-right: 5px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.typewriterEnd {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: blink-caret3 0.55s step-end infinite;
+  padding-right: 5px;
+  font-size: 30px;
+  font-weight: 300;
+  animation-delay: 2.9s;
+  animation-fill-mode: forwards;
+  line-height: 1.2;
+}
+
+.typewriter1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing1 1s steps(30, end), blink-caret 0.25s step-end 4;
+  padding-right: 5px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.typewriter2 {
+  display: inline-block;
+  overflow: hidden;
+  visibility: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing2 1.5s steps(30, end), blink-caret2 0.55s step-end 3;
+  padding-right: 5px;
+  font-size: 50px;
+  font-weight: 600;
+  animation-delay: 1.1s;
+  animation-fill-mode: forwards;
+  line-height: 1;
+}
+
+.typewriter3 {
+  display: inline-block;
+  overflow: hidden;
+  visibility: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing3 1.5s steps(30, end), blink-caret3 0.55s step-end infinite;
+  padding-right: 5px;
+  font-size: 30px;
+  font-weight: 300;
+  animation-delay: 2.9s;
+  animation-fill-mode: forwards;
+  line-height: 1.2;
+}
+
+/* The typing effect */
+@keyframes typing1 {
+  from {
+    width: 0;
+    display: inline-block;
+    visibility: visible;
+  }
+
+  to {
+    width: 100%;
+    border-right: none !important;
+  }
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+    display: inline-block;
+    visibility: visible;
+  }
+
+  to {
+    width: 100%;
+    border-right: none !important;
+    visibility: visible;
+  }
+}
+
+@keyframes typing3 {
+  from {
+    display: inline-block;
+    width: 0;
+    visibility: visible;
+  }
+
+  to {
+    width: 100%;
+    border-right: none !important;
+    visibility: visible;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from {
+    border-right: 0.15em solid transparent;
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #fff;
+  }
+
+  to {
+    border-right: none !important;
+  }
+}
+
+@keyframes blink-caret2 {
+  from {
+    border-right: 0.15em solid transparent;
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #fff;
+  }
+
+  to {
+    border-right: none !important;
+  }
+}
+
+@keyframes blink-caret3 {
+  from {
+    border-right: 0.15em solid transparent;
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #fff;
+  }
+
+  to {
+    border-right: none !important;
+  }
+}

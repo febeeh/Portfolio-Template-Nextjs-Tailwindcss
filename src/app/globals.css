@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root[data-theme="dark"] {
+  --primary-bg: rgb(15, 23, 42);
+  --primary: #fff;
+  --secondary: #fff;
+  --teritary: #f8f8f8;
+
+  --primary-text: #fff;
+  --secondary-text: rgb(156, 163, 175);
+  --teritary-text: rgb(31, 181, 204);
+
+  --primary-font: "Poppins", sans-serif !important;
+
+  --background-box: rgb(38, 52, 75);
+
+  /* Button */
+  --primary-button-bg: var(--primary);
+  --primary-button-color: #fff;
+  --primary-button-hover-bg: var(--primary);
+
+  --overlay-box-close: #fff;
+  --overlay-box-lines: rgba(0, 0, 0, 0.2);
+
+  --secondary-button-bg: transparent;
+  --secondary-button-color: var(--primary);
+  --secondary-button-hover-bg: var(--primary);
+  --secondary-button-hover-color: #fff;
+  --secondary-button-border: var(--primary);
+
+  /* Colors */
+  --red: #fd5252;
+  --green: #2f912f;
+  --orange: #ff8901;
+  --black: rgb(0, 0, 0);
+
+  background-color: var(--primary-bg) !important;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: var(--primary-text);
+}
+
+* {
+  scrollbar-width: thin;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgb(13, 20, 36);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b4b4b4;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}
+
+.main_section {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+@media (max-width: 991px) {
+  .main_section {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_section {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main_section {
+    max-width: 640px;
+  }
+}
+
+.load_after_head {
+  animation-delay: 4.5s !important;
+  -moz-animation-delay: 4.5s !important;
+  -o-animation-delay: 4.5s !important;
+  -webkit-animation-delay: 4.5s !important;
+}
+
+.primary_btn {
+  color: #000;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: all 0.35s;
+  position: relative;
+  background-color: var(--primary-text);
+  cursor: pointer;
+  user-select: none;
+}
+
+.primary_btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.primary_btn:hover {
+  color: #000;
+}
+
+.primary_btn svg {
+  color: #fff !important;
+  transition: all 0.35s;
+}
+
+.primary_btn:hover svg {
+  color: #000 !important;
+  transition: all 0.35s;
+}
+
+.secondary_btn {
+  border: 0.5px solid #ffffff70;
+  color: var(--primary-text);
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: all 0.35s;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.secondary_btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.secondary_btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  transition: all 0.35s;
+  border-radius: 5px;
+}
+
+.secondary_btn:hover {
+  color: #000;
+}
+
+.secondary_btn:hover:after {
+  width: 100%;
+}
+
+.secondary_btn svg {
+  color: #fff !important;
+  transition: all 0.35s;
+}
+
+.secondary_btn:hover svg {
+  color: #000 !important;
+  transition: all 0.35s;
+}
+
+/* Animation Section */
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  -moz-animation: fadeIn 0.5s ease-in-out forwards;
+  -o-animation: fadeIn 0.5s ease-in-out forwards;
+  -webkit-animation: fadeIn 0.5s ease-in-out forwards;
+  visibility: hidden;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--teritary-text) !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.toTop {
+  animation: toTop 0.3s ease-in-out forwards;
+  -moz-animation: toTop 0.3s ease-in-out forwards;
+  -o-animation: toTop 0.3s ease-in-out forwards;
+  -webkit-animation: toTop 0.3s ease-in-out forwards;
+  visibility: hidden;
+}
+
+@keyframes toTop {
+  from {
+    position: relative;
+    transform: translate(0px 5px);
+    -o-transform: translate(0px 5px);
+    -ms-transform: translate(0px 5px);
+    -moz-transform: translate(0px 5px);
+    -webkit-transform: translate(0px 5px);
+    opacity: 0;
+    visibility: visible;
+  }
+
+  to {
+    transform: translate(0px 0px);
+    -o-transform: translate(0px 0px);
+    -ms-transform: translate(0px 0px);
+    -moz-transform: translate(0px 0px);
+    -webkit-transform: translate(0px 0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.toBottom {
+  animation: toBottom 0.3s ease-in-out forwards;
+  -moz-animation: toBottom 0.3s ease-in-out forwards;
+  -o-animation: toBottom 0.3s ease-in-out forwards;
+  -webkit-animation: toBottom 0.3s ease-in-out forwards;
+  visibility: hidden;
+}
+
+@keyframes toBottom {
+  from {
+    position: relative;
+    transform: translate(0px -5px);
+    -o-transform: translate(0px -5px);
+    -ms-transform: translate(0px -5px);
+    -moz-transform: translate(0px -5px);
+    -webkit-transform: translate(0px -5px);
+    opacity: 0;
+    visibility: visible;
+  }
+
+  to {
+    transform: translate(0px 0px);
+    -o-transform: translate(0px 0px);
+    -ms-transform: translate(0px 0px);
+    -moz-transform: translate(0px 0px);
+    -webkit-transform: translate(0px 0px);
+    visibility: visible;
+    opacity: 1;
+  }
+}

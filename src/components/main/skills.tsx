@@ -11,7 +11,7 @@ const Skills: FC = () => {
   const animationLoaded = useSelector(
     (state: any) => state.siteOptionsStore.animationLoaded
   );
-  const [skillset] = useState<Tskills[]>([
+  const [skillSet] = useState<Tskills[]>([
     {
       title: "Reactjs",
       perc: 95,
@@ -92,7 +92,7 @@ const Skills: FC = () => {
           animationLoaded ? "" : "load_after_head"
         }`}
       >
-        {skillset.map((item: any, index: number) => (
+        {skillSet.map((item: any, index: number) => (
           <div
             key={`${index}_${item.title}`}
             className="flex flex-col items-center gap-[3px]"

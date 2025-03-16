@@ -16,11 +16,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Screenshots
+
+![alt text](https://file.febeeh.dev/images/projects/portfolio/portfolio1.png)
+![alt text](https://file.febeeh.dev/images/projects/portfolio/portfolio2.png)
+![alt text](https://file.febeeh.dev/images/projects/portfolio/portfolio4.png)
 
 ## Edit Tools
 
-Goto /src/hooks/useProjects.tsx
+Goto `/src/hooks/useProjects.tsx`
 
 ```JavaScript
 const tools: Record<string, ToolType> = {
@@ -31,11 +35,12 @@ const tools: Record<string, ToolType> = {
 
 ## Edit Projects
 
-Goto /src/hooks/useProjects.tsx
+Goto `/src/hooks/useProjects.tsx`
 
-There you will find project variable, you can add your projects there.
+There you will find `project` variable, you can add your projects there.
 
 Example:
+
 ```JavaScript
 {
     title: "Project title here",
@@ -58,6 +63,37 @@ Example:
     ],
     company: "Company name here",
     work_type: "Type of work",
+}
+```
+
+## Edit Contact
+
+Goto `/src/components/main/contact.tsx`
+
+There you will find `contactList` variable, you can add your contacts there.
+
+Example:
+
+```JavaScript
+{
+    title: "Title Here",
+    icon: //Icon Here,
+    path: "URL Here",
+}
+```
+
+## Edit Skills
+
+Goto `/src/components/main/skills.tsx`
+
+There you will find `skillSet` variable, you can add your skills there.
+
+Example:
+
+```JavaScript
+{
+title: "Skill title here",
+perc: // Percentage here,
 }
 ```
 

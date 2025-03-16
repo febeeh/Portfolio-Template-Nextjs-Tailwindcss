@@ -1,3 +1,6 @@
+# Portfolio Template Using Nextjs & Tailwind CSS
+A modern, fully responsive portfolio template built with Next.js and Tailwind CSS. Designed for developers and designers to showcase their work seamlessly. Optimized for performance and easy customization. 
+
 ## Getting Started
 
 First, run the development server:
